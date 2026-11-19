@@ -1,0 +1,20 @@
+
+### BLOCKING
+
+POST http://localhost:8080/chat HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{
+    "question": "Can you write a small poem?"
+}
+
+### STREAM
+
+POST http://localhost:8080/chat/stream HTTP/1.1
+content-type: application/json
+Accept: text/event-stream
+
+{
+    "question": "Can you write a large poem?"
+}

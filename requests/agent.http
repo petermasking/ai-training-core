@@ -1,0 +1,17 @@
+
+
+# QUESTIONS:
+# I'm planning a business trip to Amsterdam next week.\nCheck the weather forecast and recommend what I should pack.\n\nAlso, check the travel policy for any relevant travel requirements.
+# According to the travel policy, what expenses can I claim for a three-day business trip?\n\nAssume the following expenses:\n- Hotel: €145 per night\n- Meals: €55 per day\n- Transportation: €85\n- Flight: €320\n\nCalculate the total reimbursement and identify any expenses that might violate company policy.
+# I'm travelling from Berlin to Amsterdam for two days and departure December 16.\n\nBased on the travel policy, help me estimate the total trip cost (travel and accommodation).
+
+# TASKS:
+# I'm travelling from Berlin to Amsterdam for two days and departure December 16.\n\nBook the trip for me.
+
+POST http://localhost:8080/agent HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{
+    "question": "I'm planning a business trip to Amsterdam next week.\nCheck the weather forecast and recommend what I should pack.\n\nAlso, check the travel policy for any relevant travel requirements."
+}

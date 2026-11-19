@@ -1,0 +1,29 @@
+
+### ASK
+
+# SIMPLE QUESTIONS:
+# What is the probation period for new employees?
+# Summarize the expense reimbursement policy.
+# What are the coding standards developers are expected to follow?
+# What is the process for reporting a security incident?
+# What is the policy on working remotely?
+# Explain the different SLA levels for customer support.
+
+# MULTI-HOP QUESTIONS:
+# I'm travelling for a customer meeting. What expenses can I claim, and what documentation do I need?
+# A customer reports a critical production incident. What should engineering do, and what communication commitments does support have?
+# An employee is leaving the company. What are the HR requirements, and what access-control steps must IT perform?
+# We want to release a new product feature. What engineering, security and release requirements should we consider?
+# A customer requests deletion of their personal data. What obligations we have have, and which internal teams should be involved?
+
+POST http://localhost:8080/rag HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{
+    "question": "What is the probation period for new employees?"
+}
+
+### INGEST
+
+POST http://localhost:8080/rag/ingest HTTP/1.1

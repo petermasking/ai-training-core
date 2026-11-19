@@ -1,0 +1,29 @@
+
+### MATH
+
+# QUESTIONS
+# How much is 12 + 36?
+# Calculate 4 times 8
+# Sum 3.14, 8.43 and 16.87
+
+POST http://localhost:8080/mcp HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{
+    "question": "How much is 12 + 36?"
+}
+
+### WEATHER
+
+# QUESTIONS
+# How is the weather in Amsterdam?
+# What is the weather like in New York?
+
+POST http://localhost:8080/mcp HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{
+    "question": "How is the weather in Amsterdam?"
+}

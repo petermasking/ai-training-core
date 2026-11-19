@@ -1,0 +1,25 @@
+
+services:
+
+  qdrant:
+    image: qdrant/qdrant:v1.20
+    container_name: qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    restart: unless-stopped
+
+  mcp-inspector:
+    image: ghcr.io/modelcontextprotocol/inspector
+    container_name: mcp-inspector
+    ports:
+      - "6274:6274"
+    volumes:
+      - mcp-inspector-data:/home/node/.mcp-inspector
+    restart: unless-stopped
+
+volumes:
+  qdrant_data:
+  mcp-inspector-data:
